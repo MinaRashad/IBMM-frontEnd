@@ -1,0 +1,241 @@
+/* styles for screens smaller than 369px */
+@media screen and (max-width: 369px) {
+    .nav {
+      position: relative; /* change from absolute */
+    }
+    .nav a {
+      padding: 1vh 1vw; /* reduce padding */
+      font-size: 2.5vh; /* reduce font size */
+    }
+    .header h1 {
+      font-size: 7vw; /* increase font size */
+      top: 5vh; /* adjust positioning */
+    }
+    .header h3 {
+      font-size: 2vh; /* reduce font size */
+      top: 17vh; /* adjust positioning */
+    }
+    .down-arrow{
+      top: 30vh; /* adjust positioning */
+    }
+    .content{
+      top: 35vh; /* adjust positioning */
+      font-size: 2vh;
+    }
+    .logo{
+      width: 90vw;
+    }
+    .call-to-action{
+      width: 100vw;
+      position: absolute !important;
+      right: 0 !important;
+      text-align: unset;
+      
+    }
+  }
+
+/* styles for screens smaller than 768px */
+@media screen and (max-width: 768px) and (min-width:369px) {
+    .nav {
+      position: relative; /* change from absolute */
+    }
+    .nav a {
+      padding: 1vh 1vw; /* reduce padding */
+      font-size: 2.5vh; /* reduce font size */
+    }
+    .header h1 {
+      font-size: 7vw; /* increase font size */
+      top: 15vh; /* adjust positioning */
+    }
+    .header h3 {
+      font-size: 2.3vh; /* reduce font size */
+      top: 27vh; /* adjust positioning */
+    }
+    .down-arrow{
+      top: 40vh; /* adjust positioning */
+    }
+    .content{
+      top: 45vh; /* adjust positioning */
+      font-size: 2vh;
+
+    }
+    .logo{
+      width: 80vw;
+    }
+    .call-to-action{
+      width: 100vw;
+      position: absolute !important;
+      right: 0 !important;
+      text-align: center;
+    }
+
+  }
+  
+  /* styles for screens larger than 768px */
+  @media screen and (min-width: 769px) {
+    .nav {
+      position: absolute;
+    }
+    .nav a {
+      padding: 2vh 1vw;
+      font-size: 3vh;
+    }
+    .header h1 {
+      font-size: 8vw;
+      top: 20vh;
+    }
+    .header h3 {
+      font-size: 3vh;
+      top: 60vh;
+    }
+    .down-arrow{
+      top: 75vh;
+    }
+    .content{
+      top: 80vh;
+      font-size: 2.5vh;
+
+    }
+    .logo{
+      width: 30vw;
+    }
+    .call-to-action{
+      width: 20vw;
+      
+    }
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* common styles for all screens */
+  .nav {
+    background-color: #1157a7;
+    color: #fff;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: block;
+  }
+  
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+  }
+  
+  .nav a:hover {
+    color: #1565c1;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .banner {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: brightness(30%) saturate(120%);
+    z-index: -1;
+    object-fit: cover;
+    clip: rect(0, 100vw, 75vh, 0);
+  }
+  
+  .header h1 {
+    color: #fff;
+    font-family: fantasy;
+    text-align: center;
+    margin: 0;
+    padding: 10vh 0 0 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 100vw;
+
+  }
+  
+  .header h3 {
+    color: #c2b3b3;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: 100vw;
+    transform: translate(-50%, -50%);
+  }
+  
+
+ .down-arrow{
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(255, 253, 237);
+    box-shadow: #000 0 0 10px 0;
+    padding: 2vw;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    animation: bounce 1s alternate infinite;
+ }
+
+ .content{
+  position: absolute;
+  font-family: 'Courier New', Courier, monospace;
+  width: 100vw;
+  margin-top: 2cm;
+
+ }
+
+.logo{
+  display: block;
+  text-align: center;
+  align-self: center;
+  margin: 0 auto;
+  filter: hue-rotate(110deg);
+}
+.services{
+  padding: 1cm;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Courier New', Courier, monospace;
+  color: #0c325e;
+  font-weight: bold;
+
+}
+td{
+  padding: 1vh;
+}
+
+.call-to-action{
+  background-color: #0c325e;
+  color: #fff;
+  padding-top: 1cm 1cm 1cm 1cm;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+
+.center{
+  text-align: center;
+  margin: 0 auto;
+}
+ 
+@keyframes bounce{
+  from { transform: translate(-50%,-50%);}
+  to { transform: translate(-50%, -40%);}
+}
