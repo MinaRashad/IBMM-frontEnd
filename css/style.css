@@ -204,7 +204,7 @@
   text-align: center;
   align-self: center;
   margin: 0 auto;
-  filter: hue-rotate(110deg);
+  filter: hue-rotate(110deg) brightness(80%);
 }
 .services{
   padding: 1cm;
