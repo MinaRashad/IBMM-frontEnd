@@ -1,7 +1,8 @@
 /* styles for screens smaller than 369px */
 @media screen and (max-width: 369px) {
     .nav {
-      position: relative; /* change from absolute */
+      position: relative;
+      margin: 0; /* change from absolute */
     }
     .nav a {
       padding: 1vh 1vw; /* reduce padding */
@@ -26,7 +27,8 @@
       width: 90vw;
     }
     .call-to-action{
-      width: 100vw;
+      width: 102vw;
+      padding-left: 2vw;
       position: absolute !important;
       right: 0 !important;
       text-align: unset;
@@ -104,10 +106,26 @@
       
     }
   }
+  html, body {
+    height: 100%;
+  }
+
 
   body {
     overflow-x: hidden;
   }
+  .secondbg{
+    background-image: url("../imgs/pexels-anete-lusina-4792479.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200vw;
+    height: 150vh;
+    position: absolute;
+    z-index: -2;
+    top: -20vh;
+    right: -1vw;
+  }
+
   
   /* common styles for all screens */
   .nav {
@@ -116,10 +134,12 @@
     margin: 0;
     list-style: none;
     text-align: left;
-    width: 100%;
-    left: 0;
+    width: 100vw;
+    left: -1vw;
     top: 0;
     display: block;
+    z-index: 999;
+    padding-left: 1vw;
   }
   
   .nav a {
@@ -204,7 +224,7 @@
   text-align: center;
   align-self: center;
   margin: 0 auto;
-  filter: hue-rotate(110deg) brightness(80%);
+  filter: hue-rotate(0deg) ;
 }
 .services{
   padding: 1cm;
